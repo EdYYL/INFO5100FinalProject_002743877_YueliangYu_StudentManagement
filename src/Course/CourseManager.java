@@ -62,7 +62,7 @@ public class CourseManager extends JFrame {
 		jButton1.addActionListener(new CourseF_jButton1_actionAdapter(this));
 		jButton2.setFont(new java.awt.Font("Dialog", Font.PLAIN, 18));
 		jButton2.setText("Exit");
-		jButton2.addActionListener(new CourceF_jButton2_actionAdapter(this));
+		jButton2.addActionListener(new CourseF_jButton2_actionAdapter(this));
 		xYLayout1.setWidth(550);
 		xYLayout1.setHeight(560);
 		this.setTitle("Course Management");
@@ -201,10 +201,10 @@ class CourseF_jButton6_actionAdapter implements ActionListener {
 	}
 }
 
-class CourceF_jButton2_actionAdapter implements ActionListener {
+class CourseF_jButton2_actionAdapter implements ActionListener {
 	private CourseManager adaptee;
 
-	CourceF_jButton2_actionAdapter(CourseManager adaptee) {
+	CourseF_jButton2_actionAdapter(CourseManager adaptee) {
 		this.adaptee = adaptee;
 	}
 
