@@ -37,7 +37,7 @@ CREATE TABLE `tb_class` (
 
 LOCK TABLES `tb_class` WRITE;
 /*!40000 ALTER TABLE `tb_class` DISABLE KEYS */;
-INSERT INTO `tb_class` VALUES (1,'计算机学院','软件工程',1),(3,'计算机学院','计算机科学与技术',2),(5,'艺术设计学院','服装设计',1),(6,'自动化学院','物联网工程',2),(7,'自动化学院','物联网工程',1),(8,'计算机学院','计算机科学与技术',1),(9,'政法学院','法学',1),(10,'政法学院','法学',2),(11,'计算机学院','软件工程',2);
+INSERT INTO `tb_class` VALUES (1,'Computer College','Software Engineering',1),(3,'Computer College','Computer Science',2),(5,'Art College','Fashion design',1),(6,'Engineering College','Information System',2),(7,'Engineering College','Information System',1),(8,'Computer College','Computer Science',1),(9,'Science College','Physics',1),(10,'Science College','Physics',2),(11,'Computer College','Software Engineering',2);
 /*!40000 ALTER TABLE `tb_class` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -63,7 +63,7 @@ CREATE TABLE `tb_cource` (
 
 LOCK TABLES `tb_cource` WRITE;
 /*!40000 ALTER TABLE `tb_cource` DISABLE KEYS */;
-INSERT INTO `tb_cource` VALUES (1,'大学英语',2.5,'法学'),(2,'大学物理',1.5,'物联网工程'),(3,'高等数学',5.5,'计算机科学与技术'),(4,'C语言程序设计',3,'软件工程'),(5,'数据结构',3,'软件工程'),(6,'线性代数',1.5,'物理学'),(7,'大学语文',1.5,'服装设计'),(8,'服装市场考察',2.5,'服装设计');
+INSERT INTO `tb_cource` VALUES (1,'Calculus',2.5,'Physics'),(2,'Database',1.5,'Information System'),(3,'Computer Networks',5.5,'Computer Science'),(4,'Java Programming',3,'Software Engineering'),(5,'Data structure',3,'Software Engineering'),(6,'mechanics',1.5,'physics'),(7,'Art design',1.5,'Fashion design'),(8,'marketing',2.5,'Fashion design');
 /*!40000 ALTER TABLE `tb_cource` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -87,7 +87,7 @@ CREATE TABLE `tb_depart` (
 
 LOCK TABLES `tb_depart` WRITE;
 /*!40000 ALTER TABLE `tb_depart` DISABLE KEYS */;
-INSERT INTO `tb_depart` VALUES (1,'计算机学院'),(3,'艺术设计学院'),(4,'自动化学院'),(5,'政法学院'),(7,'物理学院');
+INSERT INTO `tb_depart` VALUES (1,'Computer College'),(3,'Art College'),(4,'Engineering College'),(5,'Science College'),(7,'物理学院');
 /*!40000 ALTER TABLE `tb_depart` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -113,7 +113,7 @@ CREATE TABLE `tb_score` (
 
 LOCK TABLES `tb_score` WRITE;
 /*!40000 ALTER TABLE `tb_score` DISABLE KEYS */;
-INSERT INTO `tb_score` VALUES (1,3001,'C语言程序设计',95),(3,3002,'高等数学',59),(5,3004,'高等数学',96),(7,3001,'数据结构',97),(8,3006,'大学物理',100);
+INSERT INTO `tb_score` VALUES (1,3001,'Java programming',95),(3,3002,'Calculus',59),(5,3004,'Calculus',96),(7,3001,'Data structure',97),(8,3006,'Calculus',100);
 /*!40000 ALTER TABLE `tb_score` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -138,7 +138,7 @@ CREATE TABLE `tb_spec` (
 
 LOCK TABLES `tb_spec` WRITE;
 /*!40000 ALTER TABLE `tb_spec` DISABLE KEYS */;
-INSERT INTO `tb_spec` VALUES (1,'计算机学院','计算机科学与技术'),(3,'艺术设计学院','服装设计'),(5,'计算机学院','软件工程'),(6,'政法学院','法学'),(7,'自动化学院','物联网工程'),(14,'计算机学院','网络工程');
+INSERT INTO `tb_spec` VALUES (1,'Computer College','Computer Science'),(3,'Art College','Fashion design'),(5,'Computer College','Software Engineering'),(6,'Science College','Physics'),(7,'Engineering College','Information System'),(14,'Computer College','Cyber security');
 /*!40000 ALTER TABLE `tb_spec` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -167,7 +167,7 @@ CREATE TABLE `tb_student` (
 
 LOCK TABLES `tb_student` WRITE;
 /*!40000 ALTER TABLE `tb_student` DISABLE KEYS */;
-INSERT INTO `tb_student` VALUES (1,3001,'黄章','计算机学院','软件工程',1),(4,3003,'马云','计算机学院','计算机科学与技术',2),(6,3002,'马化腾','计算机学院','软件工程',1),(7,3004,'周鸿祎','自动化学院','物联网工程',2),(8,3005,'雷军','自动化学院','物联网工程',2),(9,3006,'李彦宏','物理学院','物理学',1),(10,3007,'刘强东','政法学院','法学',1),(11,3008,'丁磊','物理学院','物理学',1),(13,3009,'张朝阳','艺术设计学院','服装设计',1);
+INSERT INTO `tb_student` VALUES (1,3001,'yyl','Computer College','Software Engineering',1),(4,3003,'zzz','Computer College','Computer Science',2),(6,3002,'zdm','Computer College','Software Engineering',1),(7,3004,'yuyueliang','Engineering College','Information System',2),(8,3005,'day','Engineering College','Information System',2),(9,3006,'lly','Science college','Physics',1),(10,3007,'Mark','Science College','Physics',1),(11,3008,'yhq','Science','Physics',1),(13,3009,'jack','Art College','Fashion design',1);
 /*!40000 ALTER TABLE `tb_student` ENABLE KEYS */;
 UNLOCK TABLES;
 
